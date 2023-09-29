@@ -1,0 +1,64 @@
+﻿<Window x:Class="Code_Refresher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Code_Refresher"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="900">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Canvas Background="#FF2D343A" Grid.ColumnSpan="2">
+
+            <TextBox x:Name="inputName" Foreground="#FF414848" Height="85" Canvas.Left="189" Canvas.Top="32" Width="561" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="inputNumber" Canvas.Left="189" Canvas.Top="125" HorizontalAlignment="Left" Height="69" VerticalAlignment="Center" Width="554" Foreground="#FF414848" FontSize="20"/>
+
+            <Button Content="Add Player" Click="AddPlayer_Click" Canvas.Left="282" Canvas.Top="200" Height="70" Width="380" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20"/>
+
+            <Button Content="Display All Players" Click="DisplayAllPlayers_Click" Canvas.Left="329" Canvas.Top="272" Height="64" Width="276" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="Black" FontSize="24"/>
+
+            <Button Content="Display Odd Number Players" Click="DisplayOddNumberPlayers_Click" Canvas.Left="293" Canvas.Top="343" HorizontalAlignment="Center" Height="76" VerticalAlignment="Top" Width="359" FontSize="19"/>
+            <TextBox x:Name="inputLetter" Canvas.Left="260" Canvas.Top="419" HorizontalAlignment="Left" Height="42" VerticalAlignment="Top" Width="511" FontSize="20"/>
+
+
+            <Button Content="Display Players by Letter" Click="DisplayPlayersByLetter_Click" Canvas.Left="291" Canvas.Top="466" HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="384"/>
+            <TextBlock Canvas.Left="27" TextWrapping="Wrap" Text="Players Name " Canvas.Top="65" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Center" Height="41" Width="124" FontSize="18" Foreground="#FFE7A0A0">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.847"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock Canvas.Left="28" TextWrapping="Wrap" Text="Players Number " Canvas.Top="151" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="139" FontSize="18" Foreground="#FFE7A0A0">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.847"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock Canvas.Left="51" TextWrapping="Wrap" Text="Loook up Player by first letter " Canvas.Top="411" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top" Height="59" Width="175" FontSize="18" Foreground="#FFE7A0A0">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.847"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+
+        </Canvas>
+
+
+
+    </Grid>
+</Window>
