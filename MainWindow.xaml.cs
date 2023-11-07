@@ -65,7 +65,7 @@ namespace Code_Refresher
             // Display players whose names start with the specified letter (case-insensitive) in a message box
             string letter = inputLetter.Text.ToLower();
             string matchingPlayers = string.Join(", ", players.Where(p => p.Name.ToLower().StartsWith(letter)).Select(p => p.Name));
-            inputName.Clear();
+           
 
             MessageBox.Show($"Players whose names start with '{letter}': {matchingPlayers}");
 
